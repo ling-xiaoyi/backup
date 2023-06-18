@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>凌小依的博客</h1>
+      <h1>凌小依</h1>
       <nav>
         <ul>
           <li><a href="index.html">首页</a></li>
