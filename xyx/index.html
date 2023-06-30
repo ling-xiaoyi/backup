@@ -74,7 +74,7 @@
 				welcome=game.add.image(0,0,'starfield');
 				welcome.width = this.game.world.width;
 				welcome.height = this.game.world.height;
-				startText=game.add.text(game.world.centerX,game.world.centerY,'Click anywhere on the screen to start',{fill:'#fff',fontSize:'16px'});
+				startText=game.add.text(game.world.centerX,game.world.centerY,'点击任意位置开始',{fill:'#fff',fontSize:'16px'});
 				startText.anchor={x:0.5,y:0.5};
 				game.input.onDown.addOnce(Down, this);
 			};
@@ -84,7 +84,7 @@
 				gameover=game.add.image(0,0,'starfield');
 				gameover.width = this.game.world.width;
 				gameover.height = this.game.world.height;
-				restartText=game.add.text(game.world.centerX,game.world.centerY,'Click anywhere on the screen to restart',{fill:'#fff',fontSize:'16px'});
+				restartText=game.add.text(game.world.centerX,game.world.centerY,'点击屏幕上的任意位置重新启动',{fill:'#fff',fontSize:'16px'});
 				restartText.anchor={x:0.5,y:0.5};
 				game.input.onDown.addOnce(reDown, this);
 			};
