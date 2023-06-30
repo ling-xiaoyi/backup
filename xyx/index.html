@@ -253,7 +253,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 					    anim.onComplete.add(animationStopped, this);
 						enemy.kill();
 					}
-					enemy.hp--;
+					enemy.hp++;
 				}, null, this);
 
 
@@ -261,7 +261,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 					if (bullet.belong=='player') {return false;}
 					bullet.kill();
     				player.oldHP = player.hp;
-					player.hp--;
+					player.hp++;
 				}, null, this);
 
 				this.dt++;
