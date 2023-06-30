@@ -12,15 +12,19 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
     <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .row{background-color: rgba(0, 0, 255, 0.178);height: 120px;margin:10px;}
+         .col-4{background-color: rgba(101, 101, 161, 0.842);height: 30px;padding: 10px;margin: 10px;}
+       </style>
     <title>Welcome 凌°</title>
 </head>
 
 <body>
     <div class="container mt-3">
-        <h2>选项卡切换</h2>
         <br>
         <!-- 下导航 -->
-        <ul class="nav nav-tabs fixed-bottom container" role="tablist" >
+        
+        <ul class="nav nav-tabs fixed-bottom " role="tablist" >
           <li class="nav-item">
             <a class="nav-link active" data-bs-toggle="tab" href="#home">主页</a>
           </li>
@@ -31,20 +35,48 @@
             <a class="nav-link" data-bs-toggle="tab" href="#menu2">关于</a>
           </li>
         </ul>
+
       
         <!-- Tab panes -->
         <div class="tab-content">
           <div id="home" class="container tab-pane active"><br>
-            <h3>HOME</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!-- 首页 -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- 指示符 -->
+               <div class="carousel-indicators">
+                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+               </div>
+               
+               <!-- 轮播图片 -->
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img src="https://w.wallhaven.cc/full/1p/wallhaven-1pd1o9.jpg" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="https://w.wallhaven.cc/full/e7/wallhaven-e7jj6r.jpg" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="https://w.wallhaven.cc/full/j3/wallhaven-j3m8y5.png" class="d-block" style="width:100%">
+                 </div>
+               </div>
+               
+               <!-- 左右切换按钮 -->
+               <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                 <span class="carousel-control-next-icon"></span>
+               </button>
+             </div>
           </div>
           <div id="menu1" class="container tab-pane fade"><br>
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           <!-- 功能页 -->
           </div>
           <div id="menu2" class="container tab-pane fade"><br>
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <!-- 关于 -->
           </div>
         </div>
       </div>
