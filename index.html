@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+*{
+  font-family: 微软雅黑;
+}
+.clock{
+width:100%;
+height:50px;
+background: #000;
+color:#fff;
+font-weight: bold;
+border-radius: 50px;
+text-align:center;
+line-height:50px;
+}
+</style>
+</head>
+<body>
+<div class="clock">
+<span>提交成功，<span id='sid'>3</span>秒后即将进入!</span>
+</div>
+</body>
+<script>
+sidobj=document.getElementById('sid');
+s=3;
+sobj=setInterval(function(){
+sidobj.innerHTML=--s;
+if(s==0){
+location='192.168.0.1';
+}
+},1000);
+</script>
+</html>
