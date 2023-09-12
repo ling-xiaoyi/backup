@@ -1,0 +1,173 @@
+.navbar {
+    list-style-type: none;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* 将列表项居中对齐 */
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 50px;
+    /* 增加间距 */
+    margin-top: 10px;
+    /* 垂直居中对齐 */
+    margin-bottom: 10px;
+    /* 垂直居中对齐 */
+}
+
+.navbar li a {
+    display: block;
+    color: #808080;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #85cccb;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: white;
+}
+
+.text-overlay hr {
+    background-color: #85cccb;
+}
+
+/* 设置网站页尾的背景图 */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.footer-bg {
+    background-image: url('img/yw.png');
+    background-size: cover;
+    height: 300px
+        /* 背景图的高度 */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-us h3 {
+    font-size: 20px;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-business,
+.icp-info {
+    flex-basis: 50%;
+}
+
+.main-business h3 {
+    font-size: 20px;
+}
+
+.main-business p {
+    margin-top: 10px;
+}
+
+.icp-info {
+    text-align: right;
+}
+
+.icp-info span {
+    margin-left: 10px;
+}
+
+.overlap-container {
+    position: relative;
+    border-top: 10px solid transparent;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 其他样式属性 */
+}
+
+.overlay-text {
+    position: absolute;
+    left: 28%;
+    text-align: center;
+    margin-top: 80px;
+    /* 其他样式属性 */
+}
+
+.nr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    border-bottom: 30px solid transparent;    
+}
+
+.gsjj {
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gsjj img {
+    max-width: 400px;
+    max-height: auto;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.gsjj div p {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    display: inline-block;
+}
+.ig img{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us img{
+  justify-content: center;
+  align-items: center;
+}

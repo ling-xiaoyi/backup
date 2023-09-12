@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 上边框边距 */
+.box {
+    margin-top: 20px;
+}
+
+/* 限制左右两端的安全距离 */
+.xz {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: aqua; */
+}
+
+.logo {
+    width: 150px;
+}
+
+.xz ul {
+    display: flex;
+    justify-content: center;
+    /* 水平居中对齐 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    height: 100px;
+    /* 设置高度为视口高度，以便垂直居中到整个视口 */
+}
+
+.xz ul li {
+    list-style-type: none;
+    margin: 10px;
+    /* 可选的外边距，用于调整项目之间的间距 */
+    margin-left: 30px;
+    width: 150px;
+}
+
+.xz ul li a {
+    color: #858586;
+    text-decoration: none;
+}
+
+.xz ul li a:hover {
+    background-color: #000;
+}
+
+/* 轮播图控制 */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner div div {
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    top: 40%;
+    background-color: #848d9250;
+}
+
+.homeone {
+    right: 0px;
+}
+
+.banner div h1 {
+    position: absolute;
+    top: 30%;
+    right: 60%;
+    color: #fff;
+    font-size: 60px;
+}
+
+.banner div p {
+    position: absolute;
+    top: 45%;
+    right: 60%;
+    color: #fff;
+    font-size: 30px;
+}
+
+.liaojie {
+    width: 200px;
+    height: 60px;
+    background-color: aqua;
+    position: absolute;
+    top: 55%;
+    right: 60%;
+    color: #fff;
+    font-size: 30px;
+}
+
+/* WhatWedo/主营业务 */
+.whatwedo {
+
+}
+
+.whatwedo h2 {}

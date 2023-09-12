@@ -1,0 +1,144 @@
+.cent {
+    text-align: center;
+}
+.zyywimg {
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 20xp;
+    margin-right: 30px;
+}
+
+.dh {
+    height: 120px;
+}
+
+.dh a {
+    color: #928787;
+    justify-content: center;
+    margin: 30px;
+}
+
+.image {
+    width: 100%;
+    position: absolute;
+    left: -30px;
+}
+
+.div1 {
+    height: 960px;
+}
+
+.zt {
+    font-size: 25px;
+}
+
+.jd{
+    position: absolute;
+    top: 900px;
+    left: 600px;
+    position: relative;
+    z-index: -1;
+}
+.gy {
+    width: 60%;
+}
+
+.container {
+    position: relative;
+}
+
+.container .text {
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 600px;
+    left: 360px;
+    top: 50px;
+}
+
+.wtp {
+    width: 100%;
+    height: 100%;
+}
+
+.containe {
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.llsty {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1;
+
+    padding: 20px;
+}
+
+.zdq {
+    text-align: left;
+    padding-left: 200px;
+
+}
+.fk1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.box {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: #85cccb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box2{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box:before,
+  .box:after {
+    position: absolute;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .box:before {
+    top: -20px;
+    left: 0;
+  }
+  
+  .box:after {
+    bottom: -20px;
+    right: 0;
+  }
+  .gy{
+    width: 80%;
+  }
