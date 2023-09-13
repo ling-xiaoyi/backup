@@ -14,7 +14,7 @@
 
 .box nav img {
     width: 54px;
-margin-right: 100px;
+    margin-right: 100px;
 }
 
 .box nav ul li a {
@@ -87,9 +87,30 @@ margin-right: 100px;
     height: 460px;
     background-color: rgba(105, 101, 101, 0.6);
 }
+
 .box_lb ul li:hover {
     display: block;
     background-color: coral;
 }
 
 .box_lb ul li:hover .box_lb ul li div {}
+
+
+
+.box_left {
+    z-index: 6;
+    width: 300px;
+    height: 460px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 234px;
+    display: none;
+}
+
+.box_lb ul li:hover .box_left {
+    display: block;
+}
+.box_left ul li{
+    color: #000;
+}
