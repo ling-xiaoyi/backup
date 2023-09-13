@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+  <!-- 1. 多类名选择
+    好处：减少代码量，优化代码
+    第一个类名设置公共共有的样式，第二个类名设置元素独有样式
+  -->
+  <div class="box_header">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+
+  <div class="conten">
+    dadadad
+  </div>
+
+  <!-- 2. 浮动     配合标准流进行使用，一般情况最外层是标准流，里面是浮动或者定位或者其他的布局模式
+  float:left,     float: right 
+  上下格局找标准流    左右格局找浮动
+  -->
+
+  <!-- 3. 使用浮动产生情况：
+    情况1： 浮动之后不占有原来位置，脱离标准流
+    情况2： 浮动之后的元素具有行内块标签的特点   不独占一行，可以设置宽高
+    情况3： 浮动时，父元素要给高，不给高会影响下面布局 
+  -->
+
+  <!-- 4. 如果父元素无法确定高度  需要清除浮动 -->
+     <!-- overflow: hidden;   清除浮动 /  文本内容超出部分隐藏 
+  -->
+
+  <!-- 5. 盒子模型    
+    盒子模型的组成： 内容  内边距   外边距  边框
+    计算盒子模型 = 内容 + 内边距 + 边框
+
+    内边距   padding   会影响盒子的实际大小     作用： 盒子和内容之间的距离   父子关系
+    padding: 10px 20px 30px 15px;     上右下左
+    padding: 10px 20px 30px;    上   左右   下
+
+    外边距    margin   不会影响盒子的实际大小    作用： 盒子与盒子之间的距离     兄弟关系
+
+    边框    border 
+    边框的宽    border-width: 1px;
+    边框的外观    border-style: solid ;
+    边框的颜色    border-color； red;
+
+    复合写法： border: 1px solid red;
+    上边框    border-top:1px solid red;
+    下边框    border-bottom: 1px solid red;
+    左边框    border-left: 1px solid red;
+    右边框    border-right: 1px solid red;
+  -->
+
+  <!-- 6. 需求：宽必须是1200px   高必须是 400px
+    1. 可以将开始设置的宽高进行减少   1200 -40 = 1160    400 - 40 = 360
+
+    2. css3 新增属性    box-sizing: border-box; 
+  -->
+
+
+
+
+</body>
+</html>
