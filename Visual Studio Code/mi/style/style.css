@@ -8,7 +8,7 @@
 .box {
     width: 1226px;
     height: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin: 0 auto;
 }
 
@@ -111,6 +111,61 @@
 .box_lb ul li:hover .box_left {
     display: block;
 }
-.box_left ul li{
+
+.box_left ul li {
     color: #000;
+
+
+}
+/* 企业团购 */
+.box_qytg {
+    margin-top: 500px;
+    width: 234px;
+    height: 170px;
+    background-color: pink;
+    position: absolute;
+
+}
+
+.box_qytg ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 0px;
+    margin: 0px  ;
+}
+
+.box_qytg ul li {
+    background-color: #ccc;
+    height: 70px;
+    margin: 5px;
+}
+.box_qytg ul li a{
+    background-color: hotpink;
+}
+
+.box_qytg ul li a img{
+    width: 10px;
+    height: 10px;
+}
+
+.box_qytg ul li:hover{
+    background-color: aquamarine;
+}
+
+.box_qytg img {
+    width: 316px;
+    height: 170px;
+    position: absolute;
+    top: 0px;
+    left: 249px;
+}
+
+.box_qytg .img_one {
+    left: 580px;
+}
+
+.box_qytg .img_two {
+    left: 910px;
 }
