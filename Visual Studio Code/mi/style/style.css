@@ -65,12 +65,22 @@ height: 80px;
 
 /* 购物车 */
 #gwc {
+    z-index: 1;
     width: 120px;
     height: 40px;
     background: #000;
     position: relative;
     top: -40px;
     left: 1106px;
+}
+
+.gwc_fk {
+    position: relative;
+    width: 316px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    top: -6px;
+    left: -196px;
 }
 
 /* 分支 */
@@ -114,6 +124,13 @@ height: 80px;
     height: 234px;
 }
 
+.box_xlimg {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* 搜索框 */
 input {
     height: 40px;
 }
