@@ -15,7 +15,7 @@
     height: 100%;
 }
 
-.box_tb div div a {
+.box_tb div div>a {
     width: 100%;
     height: 100%;
     color: #b0b0b0;
@@ -34,25 +34,29 @@
     position: relative;
 }
 
-.app:hover .app img {
+.app:hover .app_none {
     height: 120px;
+    z-index: 1;
 }
 
-.app img {
-    border: 1px solid #fff;
-    height: 12px;
+.app_none {
+    width: 120px;
+    height: 0px;
     left: -35px;
     top: 28px;
     position: absolute;
-    z-index: 1;
-    /* transition: height 0.5s ease-out; */
-    background-color: #fff;
+    overflow: hidden;
+
+    transition: height 0.5s ease-out;
+    background-color: #db1e1e00;
+
 }
 
-/* .box_tb div a div img{
-width: 80px;
-height: 80px;
-} */
+.app_none img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
 
 .box_tb div span {
     border-left: 1px solid;
@@ -219,9 +223,11 @@ input {
 
 .box_left ul li {
     color: #000;
-
+    margin-top: 10px;
 
 }
+
+.box_left ul li img {}
 
 /* 企业团购 */
 .box_qytg {
@@ -275,4 +281,57 @@ input {
 
 .box_qytg .img_two {
     left: 910px;
+}
+
+
+/* 下灰色部分 */
+
+.box_nr {
+    width: 100%;
+    height: 1920px;
+    background-color: #f5f5f5;
+}
+
+.cdgg p {
+    float: left;
+    margin: 5px;
+    font-size: 22px;
+}
+
+.cdgg .ck {
+    float: right;
+}
+
+.cdgg_bg {
+    float: right;
+}
+
+
+/* 表格 */
+table {
+    width: 100%;
+text-align: center;
+border-collapse: separate;
+border-spacing: 5px;
+}
+
+tr {
+    /* border: 1px solid; */
+    
+}
+
+
+td {
+
+background-color: #fff;
+}
+
+.ta_k {
+    width: 234px;
+}td a img{
+    width: 160px;
+    height: 160px;
+}
+td>p{
+    font-size: 12px;
 }
