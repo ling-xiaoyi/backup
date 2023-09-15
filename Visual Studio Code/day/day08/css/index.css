@@ -1,0 +1,170 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 1226px;
+  height: 460px;
+  background-color: pink;
+  margin: 0 auto;
+  /* 相对定位 */
+  position: relative;
+}
+
+.box_ul {
+  width: 100%;
+  height: 100%;
+}
+.box_ul img {
+  width: 100%;
+  height: 100%;
+}
+
+.box_ul li {
+  display: none;
+}
+
+.box_ul .active {
+  display: block;
+}
+
+.box_left_ul {
+  width: 234px;
+  height: 460px;
+  background-color: rgba(105,101,101,0.5);
+  position: absolute;
+  top:0;
+  left: 0;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.box_left_ul li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+
+}
+
+.box_left_ul li a {
+  /* 将元素转为行内块标签 */
+  display: inline-block;
+  color: #fff;
+}
+
+.box_left_ul .li_a {
+  margin-left: 136px;
+}
+
+
+.right_box {
+  width: 234px;
+  height: 460px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 234px;
+  display: none;
+}
+.box_left_ul li:hover .right_box {
+  display: block;
+}
+
+
+.right_box1 {
+  width: 990px;
+  height: 460px;
+  background-color: orange;
+  position: absolute;
+  left: 234px;
+  top: 0;
+  display: none;
+}
+
+.box_left_ul li:hover .right_box1 {
+  display: block;
+}
+
+.right_div {
+  width: 247px;
+  height: 460px;
+  float: left;
+}
+.box1 {
+  background-color: lightblue;
+}
+.box2 {
+  background-color: lightcoral;
+}
+.box3 {
+  background-color: lightgreen;
+}
+.box4 {
+  background-color: orangered;
+}
+
+.ul_dict {
+  width: 60px;
+  height: 10px;
+  /* background-color: pink; */
+  position: absolute;
+  bottom: 50px;
+  right:80px;
+}
+
+.ul_dict li {
+  width: 10px;
+  height: 10px;
+  /* 设置圆 */
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.4);
+  float: left;
+  margin-left: 8px;
+  background-color: #333;
+}
+
+.ul_dict .active {
+  background-color: #fff;
+}
+
+.ul_dict li:hover {
+  background-color: #fff;
+}
+
+
+.left {
+  width: 30px;
+  height: 50px;
+  /* background-color: #333; */
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 234px;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+}
+.right {
+  width: 40px;
+  height: 60px;
+  /* background-color: #333; */
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.left:hover {
+  background-color: #333;
+}
+.right:hover {
+  background-color: #333;
+}
