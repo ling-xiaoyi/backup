@@ -302,6 +302,10 @@ input {
     float: right;
 }
 
+.cdgg .ck:hover{
+color: #ff6900;
+}
+
 .cdgg_bg {
     float: right;
 }
@@ -310,28 +314,43 @@ input {
 /* 表格 */
 table {
     width: 100%;
-text-align: center;
-border-collapse: separate;
-border-spacing: 5px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 5px;
 }
 
 tr {
-    /* border: 1px solid; */
-    
-}
+    border: 1px solid;
 
-
-td {
-
-background-color: #fff;
 }
 
 .ta_k {
     width: 234px;
-}td a img{
+}
+
+.td_fx {
+    margin: 0 0 0 14px;
+    width: 234px;
+    height: 300px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.td_fx:hover {
+    background: pink;
+    margin-top: -3px;
+}
+
+.td_fx_one {
+    margin: 10px 0 0 14px;
+}
+
+td a img {
     width: 160px;
     height: 160px;
+
 }
-td>p{
+
+td div>p {
     font-size: 12px;
 }

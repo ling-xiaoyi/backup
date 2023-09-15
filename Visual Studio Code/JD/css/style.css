@@ -1,0 +1,28 @@
+.box{
+    text-align: center;
+}
+.box_one{
+    position: relative;
+    margin: 0 auto;
+    background-color: skyblue;
+    width: 230px;
+    height: 322px;
+}.box_one>div>img{
+    margin-top: 10px;
+}
+.box_two{position: absolute;
+    top: 222px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 1));
+    height: 100px;
+    width: 230px;
+    display: none;
+  }
+
+  .box_two>p{
+    margin-top: 30px;
+   text-align: center;
+  }
+
+.box_one:hover .box_two{
+display: block;
+}
