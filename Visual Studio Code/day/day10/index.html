@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="js/rem.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <!-- 表单 -->
+  <!-- <input type="text"> -->
+  <!-- 表单组成： 表单域  +  控件  + 提示信息  -->
+  <!-- 表单域    用于将数据传递给后台-->
+  <form action="">
+    <!-- 控件（表单元素） -->
+    <!-- type 代表判断input 类型    text 代表文本-->
+    <!-- 文本输入框 -->
+    姓名：<input type="text" name="username" value="请输入您的姓名"><br>
+    <!-- 密码框    maxlength 密码的长度-->
+    密码：<input type="password" name="password" maxlength="8"><br>
+    <!-- 单选按钮    name 名一定要相同 否则无法进行多选一   默认选中 checked-->
+    男: <input type="radio" name="sex" checked> 女：<input type="radio" name="sex"><br>
+    <!-- 多选按钮   name 名也要相同   默认选中 checked-->
+    爱好：篮球<input type="checkbox" name="check" checked/>  rap <input type="checkbox" name="check"/> 唱跳 <input type="checkbox" name="check" checked/><br>
+
+    <!-- html5 新增 -->
+    邮箱：<input type="email" name="user_email"><br>
+    URL: <input type="url" >
+    tel: <input type="tel" ><br>
+    data <input type="date"><br>
+    time <input type="time"><br>
+    month  <input type="month">
+    datetime  <input type="datetime" name="" id=""><br>
+    week <input type="week">
+    搜索框： <input type="search">
+
+
+    <!-- 提交按钮 -->
+      <!-- 单标签  -->
+      <input type="submit" name="submit">
+      <!-- 双标签 -->
+      <button type="submit">提交文档</button>
+    
+    <!-- 重置按钮 -->
+      <input type="reset" name="reset" />
+      <button type="reset">重置密码</button><br>
+
+    
+    <!-- 下拉菜单按钮     至少有一个 option-->
+    <select name="" id="">
+      <option value="">请选择你要到的城市</option>
+      <option value="">北京</option>
+      <option value="">上海</option>
+      <option value="">广州</option>
+    </select>
+
+    <!-- 文件域 -->
+    <input type="file">
+
+    <!-- 文本域 -->
+    <textarea name="" id="" cols="30" rows="10" style="resize: none; outline: none;">开的金卡昆仑东街澳科大</textarea>
+  </form>
+</body>
+</html>
