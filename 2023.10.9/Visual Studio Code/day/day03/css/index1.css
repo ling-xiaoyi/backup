@@ -1,0 +1,67 @@
+/* 全局选择器   可以设置整个页面的默认样式 */
+* {
+  padding: 0;
+  margin: 0;
+  /* 去除无序列表的小圆点 */
+  list-style: none;
+  /* 去除a标签的下划线 */
+  text-decoration: none;
+}
+a {
+  color: pink;
+}
+
+#span1 {
+  color: blue;
+}
+
+.p1 {
+  /* 字体颜色 */
+  color: orange;
+  /* 字体大小 */
+  font-size: 50px;
+  /* 字体斜体 */
+  font-style: italic;
+  /* 字体粗体 */
+  /* bold 关键字 和 100~700的数值，没有 像素值单位   bold 和 700的字体一样粗 */
+  font-weight: bold;
+  /* 字体类型 */
+  font-family: '微软雅黑','苹方';
+
+  /* 宽 */
+  width: 100%;
+  /* 高 */
+  height: 1800px;
+  /* 背景样式 */
+  /* 背景颜色 */
+   /* 十六进制：  #后跟6位    #ffffff  白色    #000000  黑色 */
+  /* background-color: #efefef; */
+  /* 颜色： 颜色单词、十六进制、rgb、rgba  */
+  /* background-color: rgb(123,234,12); */
+  /* rgb()   括号有三个值   最大值是255  最小值0 */
+  background-color: rgba(12,123,234,0.1);
+  /* rgba()  a 代表是透明 值是0-1直接的值 */
+
+  /* 背景图片  */
+  background-image:url("../../day01/img/r_dj.png");
+  /* 背景图片不平铺 */
+  background-repeat: no-repeat;
+  /* x轴平铺 */
+  /* background-repeat: repeat-x; */
+  /* y轴平铺 */
+  /* background-repeat: repeat-y; */
+
+  /* 背景图片大小 */
+  /* background-size: 100% 100%; */
+
+  /* 背景图片的位置 */
+  /* 有两个值  第一个值是 x坐标    第二个值是y坐标    */
+  /* 方位名词    top  left  right bottom   center  两个值都是方位名词的时候不需要考虑坐标*/
+  background-position: top center ;
+
+  /* 精确单位    px 像素值 */
+  background-position: 320px 100px;
+
+  /* 固定背景图片 */
+  background-attachment: fixed;
+}

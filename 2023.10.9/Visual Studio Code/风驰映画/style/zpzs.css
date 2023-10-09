@@ -1,0 +1,54 @@
+.zp {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 10px;
+    margin-left: 10%;
+  margin-right: 10%;
+  }
+  
+  .zpitem {
+    position: relative;
+    color: #fff;;
+    
+  }
+  
+  .zpitem img {
+    display: block;
+    width: 100%;
+    
+  }
+  
+  .zptext-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .zptext-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  /* 以弃用 */
+  .zptext-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+ 

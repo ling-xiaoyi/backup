@@ -1,0 +1,16 @@
+.box {
+  width: 316px;
+  height: 170px;
+  margin: 0 auto;
+  overflow: hidden;
+ 
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.box img:hover  {
+  transform: scale(1.1);
+}

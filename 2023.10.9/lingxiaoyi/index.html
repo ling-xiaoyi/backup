@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>月色真美,风也温柔</title>
+    <link rel="icon" type="image/ico" href="img/yt2.jpg">
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css?v=1.1">
+    <link rel="stylesheet" href="./static/APlayer-1.10.1/dist/APlayer.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./static/APlayer-1.10.1/dist/APlayer.min.js"></script>
+    <script src="./static/Meting.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./static/layer-v3.5.1/layer/layer.js"></script>
+    <script src="./static/main.js"></script>
+    <style>
+        body {
+            background-image: url("img/bg1.jpg");
+        }
+
+        .photo-bg {
+            background-image: url("img/yt1.jpg");
+        }
+    </style>
+    <script>
+        // 音乐设置
+        let meting_music_api = "https://api.mizore.cn/meting/api.php";// meting api
+        let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
+        let music_type = "playlist"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
+        let music_id = "2426530028"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
+        let music_order = "random"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
+        let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
+        let music_fixed = false; // 吸底模式
+        let music_volume = 0.7; // 默认音量
+        let music_autoplay = false; // 自动播放
+        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+        // TODO 一言设置
+    </script>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>凌小依</h1>
+                <p>
+                    很荣幸您能访问我的网站！ 目前我仍在学习中，每天抽出时间来学习，励志成为一个技术很牛的程序员。
+                </p>
+                <p id="hitokoto_text">:D 一言获取中...</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <button data-href="index0.html" data-title="Blog" data-window="pop" data-anim="4"
+                            data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-primary col-lg-4">Blog</button>
+
+                        <button data-href="https://ling-xiaoyi.github.io" data-title="GitHub" data-window="pop"
+                            data-anim="4" data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-info col-lg-4">GitHub</button>
+
+                        <button data-href="https://mail.qq.com" data-title="Blog" data-window="pop" data-anim="4"
+                            data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-success col-lg-4">Send a Mail</button>
+                    </div>
+                </div>
+                <div id="aplayer-inner" class="aplayer"></div>
+                <ul class="social mt-1">
+                    <li><a href="#"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/ling-xiaoyi"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <footer>
+                    <p><a href="https://ling-xiaoyi.github.io/" target="_blank">凌小依</a>
+                        <a href="#" target="_blank">鄂ICP未备案</a>
+                        <a href="https://github.com/ling-xiaoyi" target="_blank" rel="">LYY</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+    <div id="aplayer-fixed" class="aplayer"></div>
+
+</body>
+
+</html>

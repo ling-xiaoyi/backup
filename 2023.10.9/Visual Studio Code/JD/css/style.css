@@ -1,0 +1,1101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    /* background-color: pink; */
+    list-style: none;
+    text-decoration: none;
+    /* 去除下划线 */
+    color: inherit;
+    /* 继承父元素字体颜色 */
+    /* zoom: 1; */
+}
+
+.box {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+/*顶部灰色导航栏*/
+.box_dh {
+    width: 100%;
+    height: 31px;
+    background-color: #e3e4e5;
+    z-index: 1;
+}
+
+.box_dh_xz {
+    margin: 0 auto;
+    width: 1230px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    color: #999;
+}
+
+.box_dh_xz div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 79px;
+}
+
+.box_dh_xz img {
+    height: 16px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
+
+/* 控制位置下方方块鼠标移入移出消失显示效果 */
+.box_dh_hover:hover {
+    background: #fff;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+}
+
+.box_dh_hover:hover .box_dh_hover_one {
+    display: block;
+}
+
+.box_dh_hover {
+    position: relative;
+}
+
+.box_dh_hover div {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    width: 322px;
+    height: 333px;
+    /* background-color: #000000; */
+    padding: 10px;
+    border: 1px solid;
+}
+
+.box_dh_hover_one {
+    background-color: #fff;
+}
+
+.box_dh_hover_one ul {
+    display: flex;
+    /* position: ; */
+}
+
+.box_dh_hover_one ul li {
+    width: 60px;
+    height: 28px;
+}
+
+.box_dh_hover_one ul li a {
+    padding: 0 8px;
+}
+
+.box_dh_hover_one p {
+    margin: 19px;
+}
+
+.box_dh_hover_one ul li:hover {
+    color: red;
+}
+
+/* 地区选项结束 */
+.box_dh_qy:hover {
+    color: red;
+}
+
+/* 右对齐项目 */
+.box_dh_right {
+    margin-left: auto;
+}
+
+.box_dh_right p {
+    width: 80px;
+}
+
+.box_dh_right div {
+    width: 666px;
+}
+
+.box_dh_right div a {
+    padding: 5px;
+    border-left: 1px solid #999999;
+}
+
+/* 鼠标移入后变红 */
+.box_dh_right div a:hover {
+    color: red;
+    background-color: #fff;
+    border-top: 1px solid #999999;
+}
+
+/* 导航下方白条 */
+.box_bt {
+    height: 141px;
+}
+
+
+
+
+
+/*搜索区域开始*/
+
+
+
+
+
+#serach {
+
+
+    width: 1190px;
+
+
+    height: 140px;
+
+
+    margin: 0 auto;
+
+
+    position: relative;
+
+
+    z-index: 98;
+
+
+    /*border: 1px solid orange;*/
+
+
+}
+
+
+#serach .logo {
+
+
+    width: 270px;
+
+
+    height: 60px;
+
+
+    float: left;
+
+
+    margin-top: 15px;
+
+
+    position: relative;
+
+
+}
+
+#serach .logo img{
+    width: 190px;
+    height: 120px;
+}
+
+#serach .logo .dongtu {
+
+
+    width: 100px;
+
+
+    height: 70px;
+
+
+    background: url(../images/aa.gif) no-repeat;
+
+
+    position: absolute;
+
+
+    top: -5px;
+
+
+    left: 170px;
+
+
+}
+
+
+#serach .sou {
+
+
+    float: left;
+
+
+    width: 510px;
+
+
+    height: 57px;
+
+
+    margin-top: 15px;
+
+
+    margin-left: 20px;
+
+
+    /*border: 1px solid orange;*/
+
+
+}
+
+
+#serach .sou .sousuo {
+
+
+    width: 494px;
+
+
+    height: 30px;
+
+
+    float: left;
+
+
+    margin-top: 4px;
+
+
+    border: 3px solid #E4393C;
+
+
+}
+
+
+#serach .sou .kuang {
+
+
+    width: 406px;
+
+
+    height: 22px;
+
+
+    float: left;
+
+
+    padding: 4px 4px;
+
+
+    line-height: 20px;
+
+
+    border: none;
+
+
+}
+
+
+#serach .sou .souzi {
+
+
+    width: 78px;
+
+
+    height: 30px;
+
+
+    float: right;
+
+
+    background: #E4393C;
+
+
+}
+
+
+#serach .sou .souzi a {
+
+
+    display: block;
+
+
+    font-size: 16px;
+
+
+    font-weight: 700;
+
+
+    color: white;
+
+
+    text-align: center;
+
+
+    line-height: 30px;
+
+
+}
+
+
+#serach .sou .reci {
+
+
+    width: 510px;
+
+
+    height: 18px;
+
+
+    float: left;
+
+
+    margin-top: 5px;
+
+
+}
+
+
+#serach .sou .reci {
+
+
+    color: #999;
+
+
+}
+
+
+#serach .sou .reci a {
+
+
+    color: #999;
+
+
+    padding-right: 5px;
+
+
+}
+
+
+#serach .sou .reci a:hover {
+
+
+    color: #E4393C;
+
+
+    text-decoration: underline;
+
+
+}
+
+
+#serach .myjd {
+
+
+    width: 108px;
+
+
+    height: 32px;
+
+
+    float: left;
+
+
+    background: #F7F7F7;
+
+
+    border: 1px solid #ccc;
+
+
+    margin-top: 25px;
+
+
+    margin-left: 10px;
+
+
+    position: relative;
+
+
+}
+
+
+#serach .myjd .mytu {
+
+
+    width: 19px;
+
+
+    height: 17px;
+
+
+    float: left;
+
+
+    background: url(../images/all.png) no-repeat -123px -31px;
+
+
+    margin-top: 7px;
+
+
+    margin-left: 10px;
+
+
+}
+
+
+#serach .myjd a {
+
+
+    display: block;
+
+
+    color: #666;
+
+
+    float: left;
+
+
+    margin-top: 7px;
+
+
+    margin-left: 5px;
+
+
+}
+
+
+#serach .myjd a:hover {
+
+
+    color: #E4393C;
+
+
+    text-decoration: underline;
+
+
+}
+
+
+#serach .myjd .jiantou {
+
+
+    width: 10px;
+
+
+    height: 8px;
+
+
+    background: url(../images/all.png) no-repeat -94px -53px;
+
+
+    /*border: 1px solid orange;*/
+
+
+    position: absolute;
+
+
+    top: 10px;
+
+
+    left: 90px;
+
+
+}
+
+
+#serach .myjd .myjdhide {
+
+
+    width: 310px;
+
+
+    height: 235px;
+
+
+    border: 1px solid #ccc;
+
+
+    position: absolute;
+
+
+    top: 32px;
+
+
+    left: -203px;
+
+
+    background: white;
+
+
+    display: none;
+
+
+    z-index: 22;
+
+
+}
+
+
+#serach .myjd:hover .myjdhide {
+
+
+    display: block;
+
+
+}
+
+
+#serach .myjd .myjdhide .hello {
+
+
+    width: 310px;
+
+
+    height: 30px;
+
+
+    float: left;
+
+
+    /*border: 1px solid orange;*/
+
+
+}
+
+
+#serach .myjd .myjdhide .hello span {
+
+
+    color: #666;
+
+
+    float: left;
+
+
+    padding-top: 7px;
+
+
+    padding-left: 10px;
+
+
+}
+
+
+#serach .myjd .myjdhide .hello a {
+
+
+    float: left;
+
+
+    color: #005EA7;
+
+
+    margin-left: 1px;
+
+
+}
+
+
+#serach .myjd .myjdhide .hey {
+
+
+    width: 310px;
+
+
+    height: 150px;
+
+
+    float: left;
+
+
+    /*border: 1px solid orange;*/
+
+
+}
+
+
+#serach .myjd .myjdhide .hey .heyleft {
+
+
+    width: 154px;
+
+
+    height: 140px;
+
+
+    float: left;
+
+
+    border-right: 1px solid #eee;
+
+
+}
+
+
+#serach .myjd .myjdhide .hey ul li {
+
+
+    width: 124px;
+
+
+    height: 20px;
+
+
+    margin-top: 7px;
+
+
+    margin-left: 10px;
+
+
+    /*clear: both;*/
+
+
+}
+
+
+#serach .myjd .myjdhide .hey ul li a {
+
+
+    width: 124px;
+
+
+    height: 20px;
+
+
+    margin-top: 1px;
+
+
+    line-height: 20px;
+
+
+    color: #005EA7;
+
+
+}
+
+
+#serach .myjd .myjdhide .hey ul li a:hover {
+
+
+    color: #E4393C;
+
+
+    text-decoration: none;
+
+
+    background: #F3F3F3;
+
+
+}
+
+
+#serach .myjd .myjdhide .hey .heyright {
+
+
+    width: 150px;
+
+
+    height: 130px;
+
+
+    float: left;
+
+
+}
+
+
+#serach .myjd .myjdhide .hidebot {
+
+
+    width: 310px;
+
+
+    height: 52px;
+
+
+    margin-top: 3px;
+
+
+    background: #F3F3F3;
+
+
+    float: left;
+
+
+}
+
+
+#serach .myjd .myjdhide .hidebot .bottop {
+
+
+    width: 305px;
+
+
+    height: 18px;
+
+
+    /*background: green;*/
+
+
+    margin-left: 5px;
+
+
+    margin-top: 5px;
+
+
+    float: left;
+
+
+}
+
+
+#serach .myjd .myjdhide .hidebot .bottop span {
+
+
+    float: left;
+
+
+    color: #666;
+
+
+}
+
+
+#serach .myjd .myjdhide .hidebot .bottop a {
+
+
+    display: block;
+
+
+    margin-top: 0px;
+
+
+    margin-left: 120px;
+
+
+    color: #005EA7;
+
+
+}
+
+
+#serach .myjd .myjdhide .hidebot .botdown {
+
+
+    width: 305px;
+
+
+    height: 18px;
+
+
+    float: left;
+
+
+}
+
+
+#serach .myjd .myjdhide .hidebot .botdown span {
+
+
+    margin-left: 120px;
+
+
+    color: #666;
+
+
+}
+
+
+#serach .gouwuche {
+
+
+    width: 124px;
+
+
+    height: 32px;
+
+
+    border: 1px solid orange;
+
+
+    float: left;
+
+
+    background: #F7F7F7;
+
+
+    border: 1px solid #ccc;
+
+
+    margin-top: 25px;
+
+
+    margin-left: 10px;
+
+
+    position: relative;
+
+
+}
+
+
+#serach .gouwuche .chetu {
+
+
+    width: 22px;
+
+
+    height: 20px;
+
+
+    background: url(../images/all.png) no-repeat -120px -88px;
+
+
+    position: absolute;
+
+
+    top: 5px;
+
+
+    left: 5px;
+
+
+}
+
+
+#serach .gouwuche a {
+
+
+    display: block;
+
+
+    padding-left: 30px;
+
+
+    padding-top: 7px;
+
+
+    color: #666;
+
+
+}
+
+
+#serach .gouwuche a:hover {
+
+
+    color: #E4393C;
+
+
+    text-decoration: underline;
+
+
+}
+
+
+#serach .gouwuche .jianleft {
+
+
+    width: 10px;
+
+
+    height: 10px;
+
+
+    background: url(../images/all.png) no-repeat -110px -45px;
+
+
+    position: absolute;
+
+
+    top: 10px;
+
+
+    right: 5px;
+
+
+}
+
+
+#serach .gouwuche .num {
+
+
+    width: 17px;
+
+
+    height: 20px;
+
+
+    position: absolute;
+
+
+    top: -10px;
+
+
+    left: 20px;
+
+
+    background: url(../images/all.png) no-repeat -134px -280px;
+
+
+}
+
+
+#serach .gouwuche .num .numright {
+
+
+    width: 10px;
+
+
+    height: 20px;
+
+
+    float: right;
+
+
+    /*border: 1px solid orange;*/
+
+
+    background: url(../images/all.png) no-repeat -132px -251px;
+
+
+}
+
+
+#serach .gouwuche .num .numzi {
+
+
+    width: 10px;
+
+
+    height: 10px;
+
+
+    position: absolute;
+
+
+    top: 0px;
+
+
+}
+
+
+#serach .gouwuche .num span {
+
+
+    display: block;
+
+
+    margin-left: 3px;
+
+
+    margin-top: -2px;
+
+
+    font-size: 14px;
+
+
+    color: #FFF;
+
+
+}
+
+
+#serach .gouwuche .hideche {
+
+
+    width: 348px;
+
+
+    height: 69px;
+
+
+    background: white;
+
+
+    border: 1px solid #ccc;
+
+
+    position: absolute;
+
+
+    top: 32px;
+
+
+    left: -225px;
+
+
+    display: none;
+
+
+    z-index: 22;
+
+
+}
+
+
+#serach .gouwuche:hover .hideche {
+
+
+    display: block;
+
+
+}
+
+
+#serach .gouwuche .hideche .kongche {
+
+
+    width: 56px;
+
+
+    height: 49px;
+
+
+    margin-left: 40px;
+
+
+    margin-top: 7px;
+
+
+    float: left;
+
+
+    background: url(../images/all.png) no-repeat 0px 0px;
+
+
+}
+
+
+#serach .gouwuche .hideche span {
+
+
+    display: block;
+
+
+    margin-top: 30px;
+
+
+    color: #999;
+
+
+}
+
+
+#serach .jubao {
+
+
+    width: 134px;
+
+
+    height: 46px;
+
+
+    float: left;
+
+
+    margin-left: 5px;
+
+
+    margin-top: 15px;
+
+
+    background: url(../images/a1.png) no-repeat;
+
+
+}
+
+
+/*搜索区域结束*/

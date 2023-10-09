@@ -1,0 +1,87 @@
+/* 全局选择器 */
+* {
+  padding: 0;
+  margin: 0;
+  /* 去除无序列表小圆点 */
+  list-style: none;
+  /* 去除超链接下划线 */
+  text-decoration: none;
+}
+/* 标签选择器 */
+a {
+  color: purple;
+}
+
+/* id 选择器 */
+#box {
+  /* 宽 */
+  width: 600px;
+  /* 高 */
+  height: 300px;
+  /* 让div或者 其他块标签居中 */
+  margin: 0 auto;
+  /* 字体颜色 */
+  color: red;
+  /* 颜色： 十六进制，颜色单词，rgb,rgba */
+  /* rgb   r 代表红  g代表绿  b代表蓝 最大值255，最小值0  没有负值   a 代表透明 值是0-1 */
+  /* 字体大小 */
+  font-size: 50px;
+  /* 字体粗体 */
+  font-weight: bold; /* bold 是关键字，100~700数值 没有 px   bold 和700 是一样粗*/
+  /* 字体斜体 */
+  font-style: italic; 
+  /* 字体类型 */
+  font-family: '微软雅黑','苹方';
+  /* 背景颜色 */
+  background-color: aquamarine;
+  /* 背景图片   */
+  background-image: url(../../day01/img/r_dj.png);
+  /* 背景图片不平铺 */
+  background-repeat: no-repeat;
+  /* 背景图片的位置 */
+  background-position: 120px 200px;
+  /* 固定背景图片 */
+  background-attachment: fixed;
+  /* 行高  行高的值是当前所在标签的高，仅限一行文字*/
+  line-height: 300px;
+  /* 文本居中 */
+  text-align: center;
+}
+
+/* class选择器 */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+}
+
+/* 后代选择器 */
+.box_span span {
+  color: red;
+}
+
+/* 子代选择器 */
+.box_p p {
+  color: blue;
+}
+
+/* 群组选择器 */
+span, p,a {
+  color: orange;
+}
+
+/* 伪类选择器 */
+/* :hover   冒号前是鼠标移入的目标     hover 后添加一个鼠标移入后要改变的元素目标*/
+.box_son {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.box_son:hover {
+  color: yellow;
+}
+
+.box_son:hover span {
+  color: #000;
+}

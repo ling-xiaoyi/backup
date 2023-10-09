@@ -1,0 +1,121 @@
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
+.box_dh {
+   width: 100%;
+   /* height: 1.0412rem; */
+   position: fixed;
+   padding: 0;
+   left: 0;
+   right: 0;
+
+}
+
+.box_ssl {
+   height: 1.0412rem;
+   position: fixed;
+   padding: 0;
+   left: 0;
+   right: 0;
+}
+
+.box_ssl a input {
+   margin: 0.208334rem 0 0 0.34375rem;
+   height: 0.625rem;
+   width: 6.8332rem;
+   display: block;
+   background-color: #f7f7f7;
+   border: none;
+   border-radius: 0.5rem;
+   font-size: 0.270834rem;
+}
+
+.box_dh ul {
+   width: 1.5rem;
+   height: calc(100vh - 0.9376rem);
+   font-size: 0.25rem;
+   position: absolute;
+   top: 1.0412rem;
+   left: 0;
+   overflow: auto;
+   scrollbar-width: thin;
+   /* 兼容 Firefox */
+   -ms-overflow-style: none;
+   /* 兼容 IE 和 Edge */
+
+}
+
+.box_dh ul::-webkit-scrollbar {
+   width: 0;
+   height: 0;
+}
+
+.box_dh ul li {
+   height: 0.9rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box_dh ul li a {
+   color: #666666;
+}
+
+
+/* 底部导航栏 */
+.box_fl {
+   width: 100%;
+
+}
+
+.footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 0.9376rem;
+   background-color: #fff;
+   color: #fff;
+   border-top: 1px solid;
+   /* 添加上边框 */
+   box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
+   /* 添加外阴影 */
+}
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   margin-top: 0.05rem;
+}
+
+.nav-item {
+   display: flex;
+   flex-direction: column;
+   margin: 0 0.46rem;
+
+   font-size: 0.24rem;
+   color: #999999;
+}
+
+.nav-item img {
+   width: 0.4166rem;
+   height: 0.4166rem;
+   margin: 0 auto;
+}
+
+.nav-item span {
+   margin-top: 0.1041666rem;
+}
+/* 内容主体 */
+.box_nr{
+float: right;
+margin: 1.0412rem 0.5rem 0.2rem ;
+display: block;
+}
+.box_nr>img{
+   width: 5.0972rem;
+   height: 1.5276rem;
+}

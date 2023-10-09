@@ -1,0 +1,23 @@
+.cont {
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}

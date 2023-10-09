@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 如果需要全屏居中，请使用这个 height 值 */
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 60s;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+
+}
+
+.front {
+    background-color: aquamarine;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: antiquewhite;
+}
+
+.left {
+    transform: rotateY(-90deg);
+    background-color: chartreuse;
+}
+
+.right {
+    transform: rotateY(90deg);
+    background-color: crimson;
+}
+
+.top {
+    transform: rotateX(90deg);
+    background-color: deepskyblue;
+}
+
+.bottom {
+    transform: rotateX(-90deg);
+    background-color: pink;
+}
+
+
+.cube:hover {
+    transform: rotateX(99999999999999999deg);
+    /* 鼠标移入时旋转180度 */
+}
+
+.box {
+    margin-top: 60px;
+    position: relative;
+    width: 100px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+.box div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+}
+
+.box_1 {
+    background-color: pink
+}
+
+.box_2 {
+    background-color: skyblue;
+    transform: rotateX('10px');
+}

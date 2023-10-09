@@ -1,0 +1,19 @@
+.zyyw{
+
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imag{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.item img {
+    display: block;
+    width: 100%;
+  }

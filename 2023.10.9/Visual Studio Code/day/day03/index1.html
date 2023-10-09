@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index1.css">
+</head>
+<style>
+  span {
+    color: green;
+  }
+</style>
+<body>
+  <!-- css 引入方式；
+    1. 行内
+    2. 内部
+    3. 外部 -->
+    <!-- 行内样式表   在开始标签中添加一个 style 属性   优先级最高    不经常使用-->
+    <div style="color: red;">行内样式表</div>
+
+    <!-- 内部样式表   在head 标签下 添加一个 style 标签   不经常使用 -->
+    <span>内部样式表</span>
+
+    <!-- 外部样式表  经常使用   创建一个独立的 .css 文件   通过 link 标签引入到 .html文件中-->
+    <!-- 
+      a 标签自带下划线，同时 字体 未点击时是蓝色，点击时时红色，点击后是紫色   
+      如果其他标签包裹了 a标签，并且要设置字体颜色，需要单独给 a 标签添加 color 
+    -->
+    <a href="#">百度</a>
+
+    <!-- css 选择器-->
+    <!-- 1. 全局选择器  *   -->
+    <!-- 2. 标签选择器     p  div a  -->
+    <!-- 3. id 选择器     通过 # + id 名  整个页面有且仅有一个id名 -->
+    <span id="span1">我是带有id名的span</span>
+    <!-- 4. class 选择器   通过 . + class名   整个页面可以有多个相同的class 名  相同的类名具有相同的样式 -->
+    <p class="p1">我是class名的 p</p>
+</body>
+</html>

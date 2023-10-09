@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 0.270834rem;
+} */
+
+.box_dbdh{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.875rem;
+  background-color: #f2f2f2;
+  padding: 0 0.625rem;
+  width: 100%;
+}
+
+.logo {
+  width: 0.5312rem;
+  height: 0.5312rem;
+  background-image: url(https://m.mi.com/static/img/icon-header-logo3.ddf2a1c313.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.0625rem solid #e5e5e5;
+  border-radius: 0.2rem;
+  height: 0.665rem;
+  margin: 0 0.625rem;
+  background-color: #fff;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.270834rem;
+  padding-left: 0.3rem;
+}
+
+.user {
+  width: 0.4166rem;
+  height: 0.4166rem;
+  background-image: url(https://m.mi.com/static/img/icon-user.23496a0116.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.6128rem;
+  background-color: #f2f2f2;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  font-size: 0.270834rem;
+  color: #333;
+}
+
+.carousel {
+  width: 100%;
+  height: 3.75rem;
+  overflow: hidden;
+  margin-top: 1.4876rem;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box_img {
+  display: flex;
+  width: 100%;
+}
+
+.box_img a img {
+  width: 1.5rem;
+  height: 1.5832rem;
+}
+
+.box_img a {
+  height: 1.5832rem;
+}
+
+.box_br {
+  height: 0.1666rem;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.box_data {
+  display: flex;
+  height: 5.2916rem;
+}
+
+.box_left {
+  margin-right: 0.04rem;
+}
+
+.box_left a {
+  height: 5.2916rem;
+}
+
+.box_left a img {
+  height: 5.2916rem;
+}
+
+.box_right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.box_right a {
+  flex-grow: 1;
+  height: 2.625rem;
+}
+
+.box_right a img {
+  height: 2.625rem;
+}
+
+/* 底部导航栏 */
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.9376rem;
+  background-color: #fff;
+  color: #fff;
+  padding: 0.05rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.2rem;
+  position: relative;
+font-size: 0.24rem;
+  color: #999999;
+}
+
+.nav-item img {
+  position: relative;
+  left: 0.35rem;
+  width: 0.4166rem;
+  height: 0.4166rem;
+  margin-bottom: 0.1041666rem;
+}

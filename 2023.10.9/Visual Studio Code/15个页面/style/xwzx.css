@@ -1,0 +1,30 @@
+.xwzx
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        grid-gap: 10px;
+        margin-left: 10%;
+      margin-right: 10%;
+      }      
+      .item {
+        position: relative;
+      }
+      
+      .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+      }
+      
+      .text {
+        display: block;
+        padding: 10px;
+      }
