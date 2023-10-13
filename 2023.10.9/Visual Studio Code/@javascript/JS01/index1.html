@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+  // js数据类型： 基本数据类型   引用数据类型（复杂数据类型）
+  // 基本数据类型：
+  // 数值类型   Number 
+  var num = 10;
+  console.log(num)
+  console.log(typeof(num))  // number
+
+  // 字符串类型   '' 或者 ""   只要是通过 单引号或者双引号引起来的都是字符串类型  
+  var str = '你好 js!!!'
+  console.log(str)
+  console.log(typeof(str)) //  string
+  // 注意： 当单引号中包含引号时，一定是双引号，同样，双引号中包含引号时，一定是单引号
+  var str1 = "我是软1的'xxxx'"
+  console.log(str1)
+
+  // 布尔类型    Boolean true   false
+  var a = true;
+  console.log(a)
+  console.log(typeof(a))  // boolean
+  console.log(2>1)  // true
+
+
+  // 未定义   undefined      只声明不赋值返回的是 undefined
+  var b;
+  console.log(b)
+
+  // Null  空值
+  console.log(null)
+
+  // Symbol()    代表独一无二
+  var num1 = 10;
+  var a1 = Symbol(num1);
+  var b1 = Symbol(num1);
+  console.log(a1,b1)
+  console.log(a1 == b1)  //  false   虽然a1 和 b1 数值以及返回值是相同的 但是  a1 不等于 b1
+
+
+  // BigInt    
+  // const number = Number.MAX_SAFE_INTEGER;
+  // number1 = number + 2
+  // console.log(number1)
+
+  const MAX = BigInt(Number.MAX_SAFE_INTEGER);
+  MAX1 = MAX + 3n
+  console.log(MAX1)
+
+
+  // 引用数据类型：
+  // 数组 Array  
+  // 字面量声明数组   方框是中是数组的元素   可以放任意数据类型，每一个元素通过 逗号隔开
+  var arr = [1,2,3,4,5]
+  console.log(arr)
+
+  // 通过关键字 new  一个 Array 数组
+  var arr1 = new Array(1,'a',true)
+  console.log(arr1)
+
+  // 获取数组元素   通过 索引值
+  var arr = [1,2,3,4,5]
+  console.log(arr[0])   // 1
+  console.log(arr[4])   // 5
+
+
+  // 对象   Object   {} 代表对象   对象元素是以键值对的形式存在，每一个键值对需要通过逗号隔开，冒号前的是属性名（键名）,冒号后是属性值（键值）
+  var Person = {
+    name: '张三',
+    age: 20,
+    sex: "男"
+  }
+  // 或者对象属性   通过 对象.属性名
+  console.log(Person.age)
+
+  var obj = new Object()
+  // obj = {
+  //   name: '张三'
+  // }
+  console.log(obj)
+
+  // 函数   function 
+  
+  var num1 = 10;
+  var num2 = 20;
+  function getSum() {
+    return num1 + num2
+  }
+  // 调用函数 
+  console.log(getSum())
+</script>
+</html>

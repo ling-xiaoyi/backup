@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript表单事件</title>
+</head>
+
+<body>
+    <form action="" method="get" onreset='rest()'>
+        <input type="reset" value="重置" name='1' id='aa'>
+    </form>
+    <input type="text" value="改内容" name='1' id="ss">
+    <input type="button" value="提交" onclick='aa()'>
+    <p></p>
+    <script>
+        // onblur	当前元素失去焦点时触发此事件
+
+        // document.querySelector 代表选择到单个 input
+        // var getInput = document.querySelector('input');
+        var getInput = document.getElementById('ss');
+        // console.log(getInput);
+        // 匿名函数
+        // getInput.onblur=function(){
+        //     alert("我们失去了娇娇");
+        // }
+
+
+
+        // onchange	当前元素失去焦点并且元素的内容发生改变时触发此事件
+        // getInput.onchange = function () {
+        //     alert("娇娇变了，不在爱我们了");
+        // }
+
+        // onfocus	当某个元素获得焦点时触发此事件
+        // getInput.onfocus = function () {
+        //     console.log("娇娇我们来找你了");
+        // }
+
+        // onreset	当点击表单中的重置按钮时触发此事件
+        // function rest() {
+        //     console.log("娇娇上学去了");
+        // }
+    // onsubmit	当提交表单时触发此事件
+
+    var ss=document.getElementById("ss");
+    var p = document.getElementsByTagName('p')[0];
+    function aa(){
+        // console.log(ss.value);
+        p.style.border = '1px solid red'
+        p.innerHTML = ss.value
+        console.log(p)
+    }
+    
+    // 打印一个人的信息   
+    // 姓名，年龄，工作，工资，电话
+    // 5个input   通过函数
+    // 在页面输出
+    
+    </script>
+</body>
+
+</html>

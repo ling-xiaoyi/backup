@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript键盘事件</title>
+</head>
+<style>
+    div {
+        width: 300px;
+        height: 300px;
+        background: purple;
+        text-align: center;
+        line-height: 300px;
+        margin: 30px;
+        font-size: 22px;
+        float: left;
+        cursor: pointer;
+    }
+
+    #box {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+</style>
+
+<body>
+    <input type="text" onkeydown="keyDown()">
+    <input type="text" onkeyup="keyUp()">
+    <input type="text" onkeyup="keyPress()">
+    <script>
+        //onkeydown	当按下键盘上的某个按键时触发此事件
+        function keyDown() {
+            alert('你按下了某个键');
+        }
+        // //onkeyup 事件是指当用户按下键盘上的某个按键并将其释放（即按下并松开某个按键）时触发的事件
+        function keyUp() {
+            alert('你按下键盘之后，又放开了');
+        }
+        // //onkeypress	当按下并松开键盘上的某个键时触发此事件
+        function keyPress() {
+            alert('按下并松开时触发');
+        }
+
+        //在Document对象中注册keyDown事件处理函数
+        document.onkeydown = onKeyDown;
+        function onKeyDown(e) {
+            var e = e || window.event;  //标准化事件对象
+            // console.log(e);
+            console.log(e.keyCode);
+            switch (e.keyCode) {
+                case 37:
+                    console.log('你按下的是键盘上的左键');
+                    break;
+                case 38:
+                    console.log('你按下的是键盘上的上键');
+                    break;
+                case 39:
+                    console.log('你按下的是键盘上的右键');
+                    break;
+                case 40:
+                    console.log('你按下的是键盘上的下键');
+                    break;
+            }
+            return false;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

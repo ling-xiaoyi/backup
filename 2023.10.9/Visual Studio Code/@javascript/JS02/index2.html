@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  // 数据类型转换
+  // 字符串转数字
+  // 1. 变量名.toString()
+    var num = 10;
+    console.log(typeof(num))
+    var str = num.toString()
+    console.log(str)
+    console.log(typeof(str))
+
+  // 2. String(变量名)
+    var num1 = 20;
+    var str1 = String(num1)
+    console.log(typeof(str1))
+
+  // 3. 字符串通过 + 号相加的任意类型都会返回的是字符串类型   + 拼接
+    var name = '张三';
+    var age = 20;
+    console.log("他叫" + name + "，今年" + age + "岁了")
+
+
+  // 字符串转数字
+  // 1. prompt()   输入框中输出的任意字符都是字符串   
+  // 转换为整数   parseInt()
+  // var name1 = prompt("请输入您的姓名：");
+  // var age1 = parseInt(prompt("请输入您的年龄："));
+  // // console.log(typeof(age1))
+  // console.log("他叫" + name1 + "，今年" + age1 + "岁了")
+
+  // 转换为浮点数   parseFloat()
+  // var name1 = prompt("请输入您的姓名：");
+  // var age1 = parseInt(prompt("请输入您的年龄："));
+  // var height = parseFloat(prompt("请输入您的身高："))
+
+  // console.log("他叫" + name1 + "，今年" + age1 + "岁了" + ",身高" + height)
+
+
+  // Number()
+  // var str = "123";
+  // var num1 = 23;
+  // console.log(Number(str) + num1)
+
+
+  // 隐式转换   除了 + 法 其他都能转       -  *  /
+  var str = "10";
+  var num1 = 2;
+  console.log(str / num1)
+
+
+  // 输入学生信息，并打印学生信息
+  // 姓名，性别，年龄，身高，成绩
+  // var name = prompt("请输入姓名：");
+  // var sex = prompt("请输入性别：");
+  // var age = parseInt(prompt("请输入年龄："));
+  // var height = parseFloat(prompt("请输入身高："));
+  // var score = parseFloat(prompt("请输入成绩："));
+  // console.log("学生姓名" + name + "学生性别" + sex + "学生年龄" + age + "学生身高" + height + "学生成绩" + score)
+
+  
+  // 输入全班同学的身高，计算总和，且计算平均身高
+  // var height = prompt("输入第一个同学的身高：")
+  // var height1 = prompt("输入第二个同学的身高：")
+  // var height2 = prompt("输入第三个同学的身高：")
+  // var height3 = prompt("输入第四个同学的身高：")
+  // var height4 = prompt("输入第五个同学的身高：")
+  // var sum = parseFloat(height) + parseFloat(height1) + parseFloat(height2) + parseFloat(height3) + parseFloat(height4)
+  // console.log(sum)
+  // console.log(sum / 5)
+</script>
+</html>

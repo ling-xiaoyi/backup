@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定时器：setTimeout和setInterval</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <button id="stop" onclick="stopTime()">时间停止</button>
+    <button id="go" onclick="goTime()">时间恢复</button>
+    <button onclick="delayedAlert(this);">2秒后弹出一个提示框</button>
+    <button onclick="clearAlert();">取消</button>
+<script>
+// JavaScript 定时器，有时也称为“计时器”，用来在经过指定的时间后执行某些任务，类似于我们生活中的闹钟。
+
+// 在 JavaScript 中，我们可以利用定时器来延迟执行某些代码，或者以固定的时间间隔重复执行某些代码。例如，您可以使用定时器定时更新页面中的广告或者显示一个实时的时钟等。
+// 方法	                                 说明
+// setTimeout()	在指定的时间后（单位为毫秒），执行某些代码，代码只会执行一次
+// setInterval()	按照指定的周期（单位为毫秒）来重复执行某些代码，定时器不会自动停止，除非调用 clearInterval() 函数来手动停止或着关闭浏览器窗口
+
+// setTimeout()
+// setTimeout() 函数用来在指定时间后执行某些代码，代码仅执行一次。
+
+// setTimeout(function[function, delay, arg1, arg2, ...]);
+// setTimeout(function[function, delay]);
+// setTimeout(code[function, delay]);
+
+
+// var a=0;
+// a = a + 1
+// setTimeout(function(b){
+//     console.log(b);
+// },1000,a)
+
+
+
+// for(var i=0;i<5;i++){
+//     // for 循环执行非常快，全部执行后才会执行定时器的内容
+//     setTimeout(function(){
+//         console.log(i);    //输出5   在此输出的是for循环执行后的长度，所以是5次     
+//     },1000);
+// }
+// for(let i=0;i<5;i++){
+//     // for 环执行使用let关键字声明变量  let没有变量提升，它是一个代码块的作用域 所以执行一次继续执行定时器
+//     setTimeout(function(){
+//         console.log(i)   //输出 0 1 2 3 4   因为定时器执行一次  所以循环完就不在执行
+//     },1000);
+// }
+// for(var i=0;i<5;i++){
+//     (function(i){
+//         setTimeout(function(){
+//             console.log(i); 
+//         },2000);
+//     })(i)
+// }
+
+
+// setInterval() 函数可以定义一个能够重复执行的定时器，每次执行需要等待指定的时间间隔。
+
+
+// 提示：通过 setInterval() 函数定义的定时器不会自动停止，除非调用 clearInterval() 函数来手动停止或着关闭浏览器窗口。
+
+// var num=1;
+// function myFun(){
+//     document.getElementById('one').innerHTML += num + "&nbsp;";
+//     num++;
+// }
+// setInterval(myFun,1000)
+// 显示当前时间
+function showTime(){
+    let dayTime=new Date(); 
+    console.log(dayTime)
+    document.getElementById("two").innerHTML='当前时间是&nbsp;'+ dayTime.toLocaleString();
+}
+setInterval(showTime,1000);
+
+
+//当使用 setTimeout() 或 setInterval() 设置定时器时，这两个方法都会产生一个定时器的唯一 ID，ID 为一个正整数值，也被称为“定时器标识符”，通过这个 ID，我们可以清除 ID 所对应的定时器。这个定时器就是我们创建的一个变量而已
+
+
+</script>   
+</body>
+</html>

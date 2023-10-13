@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- id 名元素 -->
+  <div id="box"></div>
+  <div class="header"></div>
+  <p></p>
+
+
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+</body>
+<script>
+  // 获取dom元素
+  var box = document.getElementById('box');
+  // 给元素添加内容  innerHTML
+  box.innerHTML = '我是id名为box的盒子'
+  console.log(box)
+
+  // 获取 class名元素的时候需要添加索引，因为class名不具有唯一性
+  var head = document.getElementsByClassName('header')[0];
+  // 改变元素内容样式
+  head.innerHTML = '我是头部标签';
+  head.style.color = 'red';
+  head.style.width = '200px';
+  head.style.height = '200px';
+  head.style.backgroundColor = 'orange';
+  console.log(head)
+
+  var p1 = document.getElementsByTagName('p')[0];
+  console.log(p1)
+
+
+  // var ul1 = document.getElementsByTagName('li');
+  // console.log(ul1[0])
+  var ul1 = document.querySelector('ul');
+  console.log(ul1)
+
+  var li1 = document.querySelectorAll('ul li');
+  console.log(li1)
+</script>
+</html>

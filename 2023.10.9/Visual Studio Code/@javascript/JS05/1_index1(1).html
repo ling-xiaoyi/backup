@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div {
+    width: 300px;
+    height: 300px;
+    background: purple;
+    text-align: center;
+    line-height: 300px;
+    margin: 30px;
+    font-size: 22px;
+    float: left;
+    cursor: pointer;
+  }
+</style>
+
+<body>
+  <div class="button" onclick='aa()'>请点击我</div>
+  <div class="ondubclick" ondblclick="bb()">请双击我</div>
+  <div class="onmousedown">鼠标按下会有惊喜哦</div>
+  <div class="onmouseup">鼠标抬起来会有惊喜哦</div>
+  <div class="onmouseover">鼠标引进来会有惊喜哦</div>
+  <div class="onmousemove">鼠标移动会有惊喜哦</div>
+  <div class="onmouseout">鼠标移出会有惊喜哦</div>
+  <p>wo </p>
+</body>
+<script>
+  //页面加载事件
+  // window.onload=function(){
+
+  // }
+
+  // onclick	点击鼠标时触发此事件
+  var getButton = document.getElementsByClassName('button')[0];
+  getButton.onclick = function () {
+    alert('点我干啥');
+  }
+  // function aa() {
+  //     alert('点我干啥')
+  // }
+
+  //ondblclick	双击鼠标时触发此事件
+  var ondblClick = document.getElementsByClassName('ondubclick')[0];
+  ondblClick.ondblclick = function () {
+    document.body.style.backgroundColor = 'green';
+  }
+  // function bb() {
+  //     alert('双击我瞅瞅')
+  // }
+
+  //onmousedown	按下鼠标时触发此事件
+  var onMousedown = document.getElementsByClassName('onmousedown')[0];
+  onMousedown.onmousedown = function () {
+    document.body.style.backgroundColor = 'yellow';
+  }
+
+  //onmouseup	鼠标按下后又松开时触发此事件
+  var onMouseup = document.getElementsByClassName('onmouseup')[0];
+  onMouseup.onmouseup = function () {
+    document.body.style.backgroundColor = 'blue';
+  }
+
+  //onmouseover	当鼠标移动到某个元素上方时触发此事件
+  var onMouseover = document.getElementsByClassName('onmouseover')[0];
+  onMouseover.onmouseover = function () {
+    document.body.style.backgroundColor = 'green';
+  }
+
+  //onmousemove	移动鼠标时触发此事件
+  var onMousemove = document.getElementsByClassName('onmousemove')[0];
+  onMousemove.onmousemove = function () {
+    document.body.style.backgroundColor = 'blue';
+  }
+
+  //onmouseout	当鼠标离开某个元素范围时触发此事件
+  var onMouseout = document.getElementsByClassName('onmouseout')[0];
+  onMouseout.onmouseout = function () {
+    document.body.style.backgroundColor = 'orange';
+  }
+</script>
+
+</html>

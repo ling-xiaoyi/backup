@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  // 分支流程
+  // if 判断语句
+  // (1) if 语句
+        //if(条件表达式){
+        // 要执行的代码;
+        //}
+    // var age = prompt('请输入年龄：')
+    // if(age > 18) {
+    //   console.log('你已经成年了！')
+    // }
+  // (2) if else语句：条件判断语句
+    // var age = prompt('请输入年龄：')
+    // if(age > 18) {
+    //   console.log('你已经成年了！')
+    // }else {
+    //   console.log('你是未成年！！')
+    // }
+
+  // (3)  if (条件表达式 1) {
+      // 条件表达式 1 为真时执行的代码
+      // } else if (条件表达式 2) {
+      // 条件表达式 2 为真时执行的代码
+      // }else{
+      //   所有条件表达式都为假时要执行的代码
+      // }
+
+  // 输入学生年龄 ，判断学生是否满足升班条件     6 - 13  小学       13- 16   初中     16 - 19   高中   
+  // age = parseInt(prompt('请输入年龄：'))
+  // if (age >= 6 && age < 13) {
+  //   console.log("升入小学");
+  // }else if (age >= 13 && age < 16) {
+  //   console.log("升入初中")
+  // }else if (age >= 16 && age < 19){
+  //   console.log("升入高中")
+  // }else {
+  //   console.log('请输入正确年龄')
+  // }
+  // 输入学生成绩，判断某学生成绩是否及格，   0-60不及格    60-100是及格   
+  // 0- 100    超出100 分或者低于0分都是错误的
+  // 0-60      不及格
+  // 60-100    及格
+  // 90-100    优秀
+  // 75-90     良好
+  // 60-75     及格  
+
+  // var score = parseInt(prompt('请输入成绩：'))
+  // if (score >=60 && score <= 100) {
+  //   if (score >=90) {
+  //     console.log('您输入的成绩为' + score +',优秀')
+  //   }else if (score >=75 && score < 90){
+  //     console.log('您输入的成绩为' + score +',良好')
+  //   }else {
+  //     console.log('您输入的成绩为' + score +',及格')
+  //   }
+  // }
+  // else if (score >=0 && score < 60) {
+  //   console.log('您输入的成绩为' + score +',不及格，请继续努力！')
+  // }
+  // else {
+  //   console.log('请输入正确成绩')
+  // }
+  
+  
+  // switch case 语句与 if else 语句的多分支结构类似，都可以根据不同的条件来执行不同的代码；但是与 if else 多分支结构相比，switch case 语句更加简洁和紧凑，执行效率更高。
+    
+        // switch(表达式){
+        //     case value1:
+        //         gogo;     //当表达式的结果等于value时，则执行该代码
+        //         break;
+        //     case value2:
+        //         gogo2;    //当表达式的结果等于value2时，则执行该代码
+        //         break;
+        //     ...
+        //     case valueN:
+        //         gogo3;    //当表达式的结果等于valueN时，则执行该代码
+        //         break;
+        //     default:
+        //         gogogo;   // 如果没有与表达式相同的值，则执行该代码
+        // }
+
+        // break 关键字   跳出 switch 语句
+
+        // var id = 4;
+        // switch (id) {
+        //   case 1:
+        //     console.log('普通会员');
+        //     break;
+        //   case 2: 
+        //     console.log('vip会员');
+        //     break;
+        //   case 3: 
+        //     console.log('游客')
+        //     break;
+        //   default: 
+        //     console.log('不满足条件')
+        // }
+
+// 输入任意一个年份、月份，判断该月有多少天   
+    // var year = parseInt(prompt('输入年份：'))
+    // var month = parseInt(prompt('输入月份：'))
+
+    // switch (month) {
+    //   case 1 : 
+    //     console.log('当月有31天');
+    //     break;
+    //   case 2 : 
+    //     if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))  {
+    //       console.log('当月有29天')
+    //     }else {
+    //       console.log('当月有28天')
+    //     }
+    //     break;
+    //   case 3 : 
+    //     console.log('当月有31天');
+    //     break;
+    //   case 4 : 
+    //     console.log('当月有30天');
+    //     break;
+    //   case 5 : 
+    //     console.log('当月有31天');
+    //     break;
+    //   case 6 : 
+    //     console.log('当月有30天');
+    //     break;
+    //   case 7 : 
+    //     console.log('当月有31天');
+    //     break;
+    //   case 8 : 
+    //     console.log('当月有31天');
+    //     break;
+    //   case 9 : 
+    //     console.log('当月有30天');
+    //     break;
+    //   case 10 : 
+    //     console.log('当月有31天');
+    //     break;
+    //   case 11 : 
+    //     console.log('当月有30天');
+    //     break;
+    //   case 12 : 
+    //     console.log('当月有31天');
+    //     break;
+    // }
+
+
+  
+
+  // 循环语句：  while 循环   for 循环    for in  for of  forEach   
+  // while循环语句
+  // while 循环语法:
+      // while (条件表达式) {
+      //     // 要执行的代码
+      // }
+  
+  // 注意： 条件表达式 的条件一定要具备 "假条件"   不然就是死循环
+  // 输出1 - 10
+  // var i = 0;
+  // while (i <= 10) {
+  //   document.write(i);
+  //   i++;
+  // }
+
+  // 输出1-50 奇数和 
+  // var j = 1;  //  初始值  1
+  // var sum = 0;  //   初始总和数为 0
+  // while (j < 50) {
+  //   sum += j;
+  //   j += 2;
+  // }
+  // console.log(sum)
+
+
+  // 输出1-100 的和
+  // var i = 1;
+  // var sum01 = 0;
+  // while (i <= 100){
+  //   sum01 += i;
+  //   i++;
+  // }
+  // console.log(sum01)
+
+
+  // do while 循环语句与 while 相似且不同，不同在于 do while 要先执行 代码再判断条件
+
+  // do {
+    //     // 需要执行的代码
+    // } while (条件表达式);
+  // 注意： do  while 的结尾要加分号
+  
+  // 1 - 5 
+  // var i = 1;
+  // do {
+  //   console.log('i =' + i);
+  //   i++;
+  // }while (i <= 5);
+
+
+
+  // for(表达式1; 表达式2; 表达式3) {
+    //     // 要执行的代码4
+    // }
+
+  // for循环遍历数组
+  // 定义数组
+  var arr = ['红','黄','蓝','绿'];
+  // 表达式1：  初始默认值    索引第一个 0
+  // 表达式2： 条件表达式     区间范围   索引  0 1 2 3   
+  // 表达式3： 默认值走向      自增或自减
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+  }
+
+  // 1 - 100 的和
+  var sum = 0;
+  for(var i = 1; i <= 100; i++) {
+    sum += i
+  }
+  console.log(sum)
+
+
+
+
+
+  // for in 循环 es6新增循环 ，主要用来  遍历对象 ,可以将对象中的属性依次循环出来
+
+    // for (k in object) {
+    //     // 要执行的代码
+    // }
+    // 注意： for in 主要用来遍历对象的，虽然也可以遍历数组但是不推荐使用
+  
+  
+  // 定义对象
+  var person = {'name':'Tom','age': 20}
+  // k 代表对象属性名
+  for (k in person){
+    console.log(k)
+    // console.log(person[k])
+    console.log(k + '=' + person[k])
+  }
+
+  
+  // for of 循环主要用来遍历 数组，也可以遍历其他例如字符串，对象等
+
+    // for (variable of iterable) {
+    //     // 要执行的代码
+    // }
+
+    var arr01 = ['红','黄','蓝','绿'];
+    for (item of arr01) {
+      console.log(item)
+    }
+
+
+
+
+
+
+
+
+  // 1. 求1-100之间所有数的平均值
+  // 2. 求1-100之间所有偶数和奇数和
+  // 3. 求1-100之间所有能被3整除的数字的和
+  // 4、要求用户输入班级人数，之后弹出输入框（有多少学生就弹出多少次），依次输入每个学生的成绩，先输出总成绩，最后打印出该班级成绩的平均成绩
+  // 5. 教材10元/本，参考书5元/本，练习本0.5元/本。100元买了100本书，各种书各有几本？
+  // 6. 鸡兔同笼，头有34，脚有96，有多少只鸡与兔？
+  // 7. 一个寺庙里有一百个和尚，现在有一百个馒头，大和尚一个人吃三个小和尚三个人讫一个，请问有多少大和尚
+  // 8. 打印1-100之间所有3或7的倍数 （打印1-100之间所有能被3或者7整除的数）
+  // 9. 九九乘法表
+  // 10. 操场上有一百多个人，三排余一人，四排余二人，五排余三人，问一共有多少人
+</script>
+</html>
