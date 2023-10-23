@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.dh li {
+text-align: center;
+  width: 398px;
+  float: left;
+  font-size: 30px;
+  border: 1px solid;
+}
+.dh .active{
+  background-color: pink;
+}
+.image img{
+  width: 1200px;
+  display: none;
+}
+.image .active img{
+  display: block;
+}

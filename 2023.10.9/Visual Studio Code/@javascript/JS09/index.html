@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  // 判断语句   
+    // 1. if 判断
+      // if(条件表达式) {
+      //   执行代码
+      // }
+      // var age = 17;
+      // if (age >= 18) {
+      //   console.log('已成年')
+      // }
+
+
+      // if (条件表达式) {
+      //   执行代码1
+      // }else {
+      //   执行代码2
+      // }
+
+      // var age = 17;
+      // if (age >= 18) {
+      //   console.log('已成年')
+      // }else {
+      //   console.log('未成年')
+      // }
+
+
+      // if(条件表达式) {
+      //   执行代码1
+      // }else if(条件表达式) {
+      //   执行代码2
+      // }else if (条件表达式) {
+      //   执行代码3
+      // }
+      // ....
+      // else {
+      //   执行代码n
+      // }
+
+      // 学生成绩    0-100    0-60不及格    60-100 及格   90-100优秀   85-90 良好   60-85 及格
+      // var score = parseInt(prompt('请输入成绩：'));
+      // if (score >= 60 && score <= 100) {
+      //   if(score >= 90){
+      //     console.log('你的成绩为' + score + ',优秀')
+      //   }else if (score >= 75) {
+      //     console.log('你的成绩为' + score + ',良好')
+      //   }else {
+      //     console.log('你的成绩为' + score + ',及格，勤加练习')
+      //   }
+      // }else if (score >= 0 && score < 60){
+      //   console.log('你的成绩为' + score + ',不及格，继续努力吧')
+      // }else {
+      //   console.log('请输入正确的成绩')
+      // }
+    // 2. switch 分支
+    // switch(条件表达式) {
+    //   case 1: 
+    //     执行代码1
+    //     break;
+    //   case 2: 
+    //     执行代码2
+    //     break;
+    //   case 3: 
+    //     执行代码3
+    //     break;
+    //   ....
+    //   default: 
+    //     执行代码4
+    // }
+
+    // var vip = 4;
+    // switch(vip) {
+    //   default:
+    //     console.log('无效人员');
+    //     break
+    //   case 1:
+    //     console.log('普通会员');
+    //     break
+    //   case 2:
+    //     console.log('游客');
+    //     break
+    //   case 3:
+    //     console.log('至尊会员');
+    //     break
+    //   case 4:
+    //     console.log('vip会员');
+    // }
+
+    // 输入年份和月份，判断这一年的某一月有多少天
+    var year = parseInt(prompt('请输入年份：'));
+    var month = parseInt(prompt('请输入月份：'));
+    switch(month) {
+      case 1:
+        console.log('当前月份是' + month + "，有31天");
+        break;
+      case 2:
+        if((year % 4 == 0 || year % 100 != 0) && (year % 400 == 0)){
+          console.log('当前月份是' + month + "，有29天")
+        }else {
+          console.log('当前月份是' + month + "，有28天")
+        }
+        break;
+      case 3:
+        console.log('当前月份是' + month + "，有31天");
+        break;
+      case 4:
+        console.log('当前月份是' + month + "，有30天");
+        break;
+      case 5:
+        console.log('当前月份是' + month + "，有31天");
+        break;
+      case 6:
+        console.log('当前月份是' + month + "，有30天");
+        break;
+      case 7:
+        console.log('当前月份是' + month + "，有31天");
+        break;
+      case 8:
+        console.log('当前月份是' + month + "，有31天");
+        break;
+      case 9:
+        console.log('当前月份是' + month + "，有30天");
+        break;
+      case 10:
+        console.log('当前月份是' + month + "，有31天");
+        break;
+      case 11:
+        console.log('当前月份是' + month + "，有30天");
+        break;
+      case 12:
+        console.log('当前月份是' + month + "，有31天");
+        break;
+      default:
+        console.log('你输入的月份有误！！')
+    }
+</script>
+</html>

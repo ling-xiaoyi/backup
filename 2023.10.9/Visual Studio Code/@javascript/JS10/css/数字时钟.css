@@ -1,0 +1,11 @@
+.time {
+   width: 500px;
+   height: 100px;
+   margin: 0 auto;
+   background-color: black;
+   margin-top: 200px;
+   color: antiquewhite;
+   font-size: 30px;
+   line-height: 100px;
+   text-align: center;
+ }

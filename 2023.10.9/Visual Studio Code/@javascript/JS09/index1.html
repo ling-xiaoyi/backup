@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  // while 循环
+    // while(条件表达式){
+    //   执行代码
+    // }
+
+    // 输出 1-5 的数字
+    // var i = 1;
+    // while (i <= 5) {
+    //   console.log('i = ' + i)
+    //   i++;
+    // }
+  // do  while  循环      不同： do while 先执行代码再进行条件表达式的判断
+    // do {
+    //   执行代码
+    // }while(条件表达式)
+
+    // var i = 1;
+    // do {
+    //   console.log('i = ' + i)
+    //   i++
+    // }while(i <= 5)
+  // for 循环
+    // for (表达式1;表达式2;表达式3) {
+    //   for(表达式1;表达式2;表达式3){
+
+    //   }
+    // }
+
+    // for (表达式1;表达式2;表达式3) {
+    //   执行代码
+    // }
+
+    // var color_arr= ['红','黄','蓝','绿','紫','橙'];
+    // // i 代表的是索引值
+    // for (var i = 0; i < color_arr.length; i++) {
+    //   // console.log(i)  // 返回 i 索引  
+    //   console.log(color_arr[i])
+    // }
+  // for in   遍历对象   对象元素是以键值对的形式展示   属性名: '属性值'   键值对之间使用逗号隔开
+    // var person = {
+    //   name: 'Tom',
+    //   age: 25,
+    //   job: '前端开发工程师',
+    //   salary: '2w'
+    // }
+    // for (var k in person) {
+    //   // console.log(k)  // 属性名 ？属性名+属性值？
+    //   // 对象名.属性名 得到属性值
+    //   console.log(person[k])
+    // }
+  // for of   遍历数组
+    // var color_arr= ['红','黄','蓝','绿','紫','橙'];
+    // for (var i of color_arr) {
+    //   console.log(i)  //  i 代表元素   
+    // }
+
+
+  // 1. 求1-100之间所有数的平均值
+      // var sum = 0;
+      // var ags ;
+      // for (var i = 1;i<=100;i++) {
+      //   sum += i;
+      //   ags = sum / 100
+      // }
+      // console.log(ags)
+  // 2. 求1-100之间所有偶数和奇数和
+      // 偶数
+      // var even_sum = 0;
+      // for(var i = 0;i <= 100; i+=2) {
+      //   even_sum += i
+      // }
+      // console.log(even_sum)
+      // // 奇数
+      // var odd_sum = 0;
+      // for(var i = 1; i <= 100; i+=2) {
+      //   odd_sum += i
+      // }
+      // console.log(odd_sum)
+  // 3. 求1-100之间所有能被3整除的数字的和
+      // var three_sum = 0;
+      // for(var i = 1;i <= 100; i++) {
+      //   if(i % 3 == 0){
+      //     // console.log(i)
+      //     three_sum += i
+      //   }
+      // }
+      // console.log(three_sum)
+  // 4、要求用户输入班级人数，之后弹出输入框（有多少学生就弹出多少次），依次输入每个学生的成绩，先输出总成绩，最后打印出该班级成绩的平均成绩
+      // var score_sum = 0;
+      // var score_ags ;
+      // var x = parseInt(prompt('请输入班级人数：'));
+      // for (var i = 1; i <= x; i ++) {
+      //   var y = parseInt(prompt('第' + i + '个学生的成绩：'));
+      //   score_sum += y;
+      // }
+      // console.log(score_sum)
+      // score_ags = score_sum / x
+      // console.log(score_ags)
+
+  // 5. 教材10元/本，参考书5元/本，练习本0.5元/本。100元买了100本书，各种书各有几本？
+      // for 嵌套
+      // 3个未知数
+      // for(var j = 0;j <= 100; j++) {
+      //   for(var c = 0;c <= 100 - j; c++) {
+      //     for (var l = 0; l <= 100 - j - c; l++) {
+      //       if((j + c + l == 100) && (10 * j + 5 * c + 0.5 * l == 100)){
+      //         console.log('教材' + j + '本')
+      //         console.log('参考书' + c + '本')
+      //         console.log('练习本' + l + '本')
+      //       }
+      //     }
+      //   }
+      // }
+  // 6. 鸡兔同笼，头有34，脚有96，有多少只鸡与兔？
+      // for (var t = 0; t <= 34; t ++) {
+      //   for(var j = 0;j <= 34 - t; j++) {
+      //     if((t + j == 34) && (4 * t + 2 * j == 96)){
+      //       console.log('鸡有' + j + '只')
+      //       console.log('兔有' + t + '只')
+      //     }
+      //   }
+      // }
+  // 7. 一个寺庙里有一百个和尚，现在有一百个馒头，大和尚一个人吃三个，小和尚三个人吃一个，请问有多少大和尚，有多少小和尚
+      // for(var d = 0; d <= 100; d++) {
+      //   for(var x = 0; x <= 100-d; x++) {
+      //     if((d + x == 100) && (d * 3 + x / 3 == 100)){
+      //       console.log(d,x)
+      //     }
+      //   }
+      // }
+  // 8. 打印1-100之间所有3或7的倍数 （打印1-100之间所有能被3或者7整除的数）
+        
+  // 9. 九九乘法表
+      // i 代表是行
+      // for (var i = 1; i <= 9; i++) {
+      //   // l 代表列
+      //   for(var l = 1; l <= i; l++) {
+      //     document.write(l + '*' + i  + '=' + (i * l) + '&nbsp;&nbsp;')
+      //   }
+      //   document.write('<br>')
+      // }
+  // 10. 操场上有一百多个人，三排余一人，四排余二人，五排余三人，问一共有多少人
+      // for(var i = 100; i < 200;i++) {
+      //   if(i % 3 == 1 && i % 4 == 2 && i % 5 == 3){
+      //     console.log('操场有' + i + '个人')
+      //   }
+      // }
+</script>
+</html>

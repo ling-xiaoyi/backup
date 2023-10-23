@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  // 数据类型转换
+    // 数字转字符串
+    // 1. 变量名.toString()
+    // var num = 10;
+    // console.log(typeof(num))   //  number
+    // var str = num.toString();
+    // console.log(typeof(str))   //  string
+
+    // 2. String()
+    // var num1 = 20;
+    // var str1 = String(num1)
+    // console.log(typeof(str1))  // string
+
+    // 3. + 加号    字符串与任意类型相加都是字符串
+    // var age = 18;
+    // console.log(typeof(age + ''))
+
+
+    // 字符串转数字
+    // 1. Number()
+    // var str = '123';
+    // var str1 = 100;
+    // console.log(Number(str) + str1)   // 223
+
+    // 2. 整数   parseInt()    input    prompt  输出的内容都是字符串
+    // var inp = parseInt(prompt('请输入你的年龄：'))
+    // console.log(typeof(inp))
+
+    // 3. 浮点数   parseFloat()
+    // var height = parseFloat(prompt('请输入你的身高：'));
+    // console.log(typeof(height))
+
+    // 4. 除了 + 号外 的  - * /  都可以转换   （隐式转换）
+    // var str2 = '100';
+    // var num2 = 50;
+    // console.log(str2 - num2)
+    // // console.log(str2 + num2)    //  字符串
+    // console.log(typeof(str2 - num2))
+
+
+
+    // 运算符   
+    // 1. 算术运算符
+      //  + - * / % 
+      // 取余（取模） %
+      // var num = 10;
+      // var num1 = 3;
+      // console.log(num % num1)  // 1
+      // var num = 2 ;
+      // var num1 = 5;
+      // console.log(num % num1)  // 2    被取余者大于取余者时返回最小的取余者
+      // var num = 10;
+      // var num1 = 2;
+      // console.log(num % num1) // 0
+    // 2. 比较运算符
+      // > < >= <= != === == !== 
+      // 对于比较运算符来说    返回的值 布尔类型
+      // var x = 10;
+      // var y = 5;
+      // var z = '10'
+      // console.log(x >= y)  //  true
+      // console.log(x <= y)  //  false
+      // console.log(x != y)  //  true
+      // console.log(x == z)  //  true
+      // console.log(x === z)  // false    === 全等  不仅看表面 还看类型
+      // console.log(x !== z)  // true     ！== 非全等   
+    // 3. 自增自减运算符
+      //  i++  ++i    i-- --i 
+      // i++ 先返回在自增
+      // ++i 先自增在返回
+
+      // var num = 5;
+      // var num1 = 10;
+      // num++;
+      // ++num1
+      // console.log(num + num1++)  // num = 6   num1 = 11   17
+
+      // var x = 10;
+      // var y = 5;
+      // var z = 15;
+      // z--;
+      // ++x;
+      // console.log(++x + y-- + z)   //  x= 12 y = 5 z= 14   31
+    // 4. 逻辑运算符
+      // || 或  && 与  ! 非
+    // 5. 赋值运算符
+      //  = += -= *= /= %=  
+      var x = 10;
+      var y = 5;
+      y++;
+      x += y;   //  x = x+y
+      console.log(x) // 16
+
+    // 6. 字符串运算符
+      //  + +=    
+    // 7. 三元运算符   ? :  形成简单的 判断语句
+    // 条件表达式1 > 条件表达式2 ? 表达式1 : 表达式2
+    var age = 18;
+    age >= 18 ? console.log('你已经成年了') : console.log('未成年禁止进入网吧');
+
+
+</script>
+</html>

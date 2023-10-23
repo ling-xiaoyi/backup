@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 第三方插件库 引入位置 -->
+</head>
+<body>
+  <!-- js 引用方式   3种
+  行内引入
+  <p onclick="alert(123)">点我</p>
+  内部（内嵌）
+  script  标签 写入js 代码
+  <div id="box" style="width: 200px;height: 200px;background-color: red;">点我试试</div>
+
+  外部    新建 js文件  通过  script 标签中的 src 属性 引入 文件即可    推荐使用
+  
+  <h1 id="title">这是标题</h1> -->
+
+</body>
+<script>
+  // document.getElementById('box').onclick = function() {
+  //   alert(456)
+  // }
+
+  // 输出方式：
+  // 弹窗
+  // alert('123')
+  // 页面
+  // document.write('hello javascript')
+  // 输入框   两个参数  第一个参数提示语    第二个参数是  默认  ，两个参数之间使用 英文的逗号隔开
+  // prompt('请输入你的姓名：','朱政亚')
+  // 控制台    不是给用户看的  是给程序员自己看的
+  // console.log('456')
+
+  // 变量： 存储数据的容器
+  // 变量的声明方式：   通过 var let const 关键字来声明变量
+    // 1. 先声明后赋值
+    var num ;  //  声明变量 num
+    num = 10;  //   将右侧10 赋值给 左侧 num 变量名      = 代表赋值
+    console.log(num)  //  返回 10
+
+    // 2. 声明的同时进行赋值   推荐使用
+    var num1 = 20;
+    console.log(num1)
+
+    // 3. 同时声明多个变量，多个变量使用英文逗号隔开，再进行赋值
+    // var name,age,sex;
+    // name = '张三',age = 18,sex = '男';
+    // console.log(name,age,sex)
+
+    // 4. 声明多个变量的同时并进行赋值
+    var name = '李四',age = 18,sex = '男';
+    console.log(name,age,sex)
+
+  // 特殊声明
+    // 1. undefined  未定义
+    var score ;
+    console.log(score)
+
+    // 2. 不声明不赋值
+    // console.log(job)   // 报错   job is not defined
+
+    // 3. 不声明直接赋值     job 会作为全局变量进行使用
+    job = '前端开发工程师';
+    console.log(job)
+
+
+    // 数据类型
+      // 1. 基本数据类型 
+        // 数字类型   字符串类型  布尔类型  undefined  Null  Symbol  BigInt
+      // 2. 引用（复杂）数据类型
+        // 数组类型  对象类型   函数类型
+
+    // 数字类型
+    var num = 10;
+    var num1 = 20;
+    console.log(num + num1) // 30   
+    // typeof()  判断是什么样的类型
+    console.log(typeof(num + num1))   //  number
+
+    // 字符串类型  
+    var str = '软件技术';
+    console.log(typeof(str))   // string 
+    // 注意： 字符串与任意类型相加都会返回字符串类型
+
+    // 布尔类型
+    console.log(5>3);   // true
+    console.log(typeof(5>3))  //  boolean
+
+    // Null   空类型
+    var n = null;
+    console.log(n)  //  null 
+
+    // Symbol   代表独一无二
+    var Symbol_num1 = Symbol(10);
+    var Symbol_num2 = Symbol(10);
+    console.log(Symbol_num1 === Symbol_num2)    //  == 只看值不看类型
+
+    // BigInt    新增类型    能够精确到 最后一位   
+    // const number = Number.MAX_SAFE_INTEGER;
+    // console.log(number)
+    // number1 = number + 1
+    // console.log(number1)
+    // number1 = number + 2
+    // console.log(number1)
+    // number1 = number + 3
+    // console.log(number1)
+
+    // const MAX = BigInt(Number.MAX_SAFE_INTEGER);
+    // console.log(MAX)
+    // MAX1 = MAX + 1n
+    // console.log(MAX1)
+    // MAX1 = MAX + 2n
+    // console.log(MAX1)
+    // MAX1 = MAX + 3n
+    // console.log(MAX1)
+
+
+  // 引用数据类型
+  // 数组
+  // 声明数组：
+  // 1. 字面量声明  [元素1，元素2，....]
+   var arr = [10,20,'你好',true];
+   console.log(arr)
+  //  查找数组元素   通过 索引值进行查找   数组名[索引值]
+  console.log(arr[2])
+
+  // 2. 关键字 new 一个数组对象
+  var array = new Array(1,2,3,4);
+  console.log(array)
+
+  // 对象
+  // 1. {}    对象中的元素是以键值对的形式展示，每一个键值对直接用 逗号隔开
+  var Person = {
+    name:'张三',
+    age: 18
+  }
+  console.log(Person)
+  // 查找对象元素    对象名.键名（属性名）
+  console.log(Person.name)
+
+  // 2. 关键字 new 一个对象
+  var obj = new Object();
+  obj = {
+    name:'李四',
+    job: '工程师'
+  }
+  console.log(obj.job)
+
+
+  // 函数
+  // 声明函数的关键字  function 函数名 {}   函数需要调用才会执行
+  function sum() {
+    // console.log(1 + 2)
+    return 1 + 3
+  }
+  // 调用函数
+  // sum()
+  // return 之后只是将值返回出来，并未输出
+  console.log(sum())
+
+  // 匿名函数
+  var add = function() {
+    console.log(123)
+  }
+  // 但是 add 不是函数名，是变量名
+  add()
+</script>
+<!-- <script src="js/index.js"></script> -->
+</html>

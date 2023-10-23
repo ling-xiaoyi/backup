@@ -478,3 +478,15 @@ text-align: center;
     text-decoration: none;
   color: inherit;
 }
+
+.list .active{
+    color: #f1c945;
+    border-bottom: 1px solid
+}
+
+.image table{
+    display: none;
+}
+.image .active{
+    display: block;
+}
